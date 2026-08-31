@@ -1,0 +1,15 @@
+#!/bin/bash
+
+out=""
+
+if [[$# -eq 1]]; then
+	exit 1
+elif [[$# -eq 2]]; then
+	exit 1
+elif [[$# -eq 3]]; then
+	exit 1
+elif [[$# -eq 4]]; then
+	out=$(jq '.$3.$4' $1 > $2)
+
+	eval(out)
+fi
