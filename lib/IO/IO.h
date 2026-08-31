@@ -16,11 +16,7 @@
 
 	void oneline_input(ONELINE* oneline) {
 		if (oneline == NULL) {
-			oneline = calloc(1, sizeof(ONELINE));
-
-			if (oneline == NULL) {
-				return;
-			}
+			return;
 		}
 
 		if (oneline->buffer_size == 0) {
@@ -53,6 +49,7 @@
 		}
 
 		free(oneline->buffer);
+		free(oneline);
 
 		return;
 	}
