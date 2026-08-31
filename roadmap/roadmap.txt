@@ -1,0 +1,43 @@
+Roadmap — Demo v0.1
+
+1. IO Stabilization
+- Input validation  
+- Buffer management  
+- Cleanup with destroy_buffer()  
+
+2. Main Loop Refactoring
+- Full menu (Start, Load, Quit)  
+- Invalid input handling  
+- Link the initial mission  
+
+3. Player Profile
+- create_profile() function  
+- Field validation  
+- Minimal inventory  
+
+4. Initial Mission
+- File data/mission/id.txt  
+- Initial ID: begining  
+- Save point  
+- Intro text + choice  
+
+5. fetch() Stabilization
+- Safe parsing  
+- File validation  
+- Leak elimination  
+
+6. Save System
+- Folder data/save/  
+- Profile validation  
+- Consistent save file writing  
+
+7. Basic Map
+- Initial location  
+- Mission linkage  
+
+8. Stability Tests
+- Empty/long input  
+- Missing files  
+- Save/load functionality  
+- Stable menu  
+
