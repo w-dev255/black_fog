@@ -1,0 +1,9 @@
+{
+	"player": {
+		"name": null,
+		"last_name": null,
+		"age": null,
+		"gender": null,
+		"inventory": []
+	}
+}
