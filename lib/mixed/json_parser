@@ -1,27 +1,19 @@
 #!/bin/bash
 
-if [[ $# -eq 1 ]]; then
+if [[ $# -ne 4 ]]; then
 	exit 1
-elif [[ $# -eq 2 ]]; then
-	exit 1
-elif [[ $# -eq 3 ]]; then
-	exit 1
-elif [[ $# -eq 4 ]]; then
-	input_file=$1
-
-	output_file=$2
-
-	object=$3
-
-	member=$4
-
-	value=$(jq -r ".${object}.${member}" "${input_file}")
-
-	if [[ $value = null ]]; then
-		exit 1
-	fi
-
-	echo "${value}" > "${output_file}"
-
-	exit 0
 fi
+
+input_file=$1
+output_file=$2
+object=$3
+member=$4
+value=$(jq -r ".${object}.${member}" "${input_file}")
+
+if [[ "$value" = "null" ]]; then
+	exit 1
+fi
+
+echo "${value}" > "${output_file}"
+
+exit 0
