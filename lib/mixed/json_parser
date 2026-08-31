@@ -1,15 +1,18 @@
 #!/bin/bash
 
-out=""
+if [[ $# -eq 1 ]]; then
+	exit 1
+elif [[ $# -eq 2 ]]; then
+	exit 1
+elif [[ $# -eq 3 ]]; then
+	exit 1
+elif [[ $# -eq 4 ]]; then
+	input_file=$1
+	output_file=$2
+	object=$3
+	member=$4
 
-if [[$# -eq 1]]; then
-	exit 1
-elif [[$# -eq 2]]; then
-	exit 1
-elif [[$# -eq 3]]; then
-	exit 1
-elif [[$# -eq 4]]; then
-	out=$(jq '.$3.$4' $1 > $2)
+	jq -r ".${object}.${member}" "${input_file}" > "${output_file}"
 
-	eval(out)
+	exit 0
 fi
