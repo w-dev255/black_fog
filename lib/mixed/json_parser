@@ -6,7 +6,7 @@ fi
 
 input_file="$1"
 
-if [[ ! -f input_file ]]; then
+if [[ ! -f "$input_file" ]]; then
 	exit 1
 fi
 
