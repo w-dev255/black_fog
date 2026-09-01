@@ -9,7 +9,7 @@ int main(int argc, char* argv[]) {
 	long int begining = 185403245329964;
 
 	if (strcmp(argv[1], "--hacker") == 0) {
-		ONELINE oneline = calloc(1, sizeof(ONELINE));
+		ONELINE* oneline = calloc(1, sizeof(ONELINE));
 		if (oneline == NULL) {
 			return 1;
 		}
@@ -32,9 +32,9 @@ int main(int argc, char* argv[]) {
 			} else if (strcmp(oneline.buffer, "1") == 0 || strcmp(oneline.buffer, "Load") == 0) {
 				printf("Placeholder\n");
 			} else if (strcmp(oneline.buffer, "2") == 0 || strcmp(oneline.buffer, "Quit") == 0) {
-				destroy_buffer(&oneline);
+				destroy_buffer(oneline);
 
-				destroy_oneline(&oneline);
+				destroy_oneline(oneline);
 
 				return 0;
 			}
