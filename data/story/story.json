@@ -2,7 +2,7 @@
 	"story": {
 		"chapter_0_0": {
 			"introduction": {
-				["The alarm clock rings indicating the start of the day. It's 6:00 AM. You are forced to open your eyes for one reason or another."]
+				"text": ["The alarm clock rings indicating the start of the day. It's 6:00 AM. You are forced to open your eyes for one reason or another."]
 			},
 			"text": [
 				["You decide to get out of bed.", "You decide to go back to sleep."],
