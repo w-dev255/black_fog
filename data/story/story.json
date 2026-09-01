@@ -4,7 +4,10 @@
 			"text": [
 				["The alarm clock rings indicating the start of the day. It's 6:00 AM. You are forced to open your eyes for one reason or another."],
 				["You decide to get out of bed.", "You decide to go back to sleep."],
-				["You decided to go sit at your desk and turn on your PC. When you see the login screen you decide to enter your password, a numeric sequence of eight characters.", "You decided to go to school, without having breakfast or saying goodbye to anyone.", "You decided to go to breakfast."]
+				["You decided to go sit at your desk and turn on your PC. When you see the login screen you decide to enter your password, a numeric sequence of eight characters.", "You decided to go to school, without having breakfast or saying goodbye to anyone.", "You decided to go to breakfast."],
+				["Open Tor browser.", "Open Tor browser in a VM."],
+				["You decide to open Tor browser outside of a VM.", "You decide to open Tor browser inside a VM."],
+				["You decide to think about what to type in the search bar at the top of the screen.", ""]
 			],
 			"options": [
 				["Get out of bed", "Go back to sleep"],
