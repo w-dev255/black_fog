@@ -12,6 +12,7 @@
 	typedef struct {
 		char* buffer;
 		size_t buffer_size;
+		int allocated;
 	} ONELINE;
 
 	void oneline_input(ONELINE* oneline) {
@@ -24,7 +25,7 @@
 		}
 
 		if (oneline->buffer == NULL) {
-			oneline->buffer = malloc(oneline->buffer_size);
+			oneline->buffer = calloc(oneline->buffer_size, 1);
 
 			if (oneline->buffer == NULL) {
 				return;
@@ -32,6 +33,8 @@
 		}
 
 		if (fgets(oneline->buffer, oneline->buffer_size, stdin) == NULL) {
+			oneline->buffer[0] = '\0';
+
 			return;
 		}
 		oneline->buffer[strcspn(oneline->buffer, "\n")] = '\0';
@@ -44,13 +47,15 @@
 			return;
 		}
 
-		if (oneline->buffer != NULL) {
-			free(oneline->buffer);
-			oneline->buffer = NULL;
-		}
+		if (oneline->allocated == 1) {
+			if (oneline->buffer != NULL) {
+				free(oneline->buffer);
+				oneline->buffer = NULL;
+			}
 
-		if (oneline->buffer_size != 0) {
-			oneline->buffer_size = 0;
+			if (oneline->buffer_size != 0) {
+				oneline->buffer_size = 0;
+			}
 		}
 
 		return;
@@ -61,13 +66,15 @@
 			return;
 		}
 
-		if (oneline->buffer != NULL) {
-			free(oneline->buffer);
-			oneline->buffer = NULL;
-		}
+		if (oneline->allocated == 1) {
+			if (oneline->buffer != NULL) {
+				free(oneline->buffer);
+				oneline->buffer = NULL;
+			}
 
-		if (oneline->buffer_size != 0) {
-			oneline->buffer_size = 0;
+			if (oneline->buffer_size != 0) {
+				oneline->buffer_size = 0;
+			}
 		}
 
 		free(oneline);
