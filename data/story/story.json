@@ -3,7 +3,7 @@
 		"chapter_0_0": {
 			"text": "The alarm clock rings indicating the start of the day. It's 6:00 AM. You are forced to open your eyes for one reason or another.",
 			"options": ["Get out of bed", "Go back to sleep"],
-			"goto": "chapter_0_0_1"
+			"goto": ["good_start", "bad_start"]
 		}
 	}
 }
