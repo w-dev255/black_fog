@@ -1,11 +1,14 @@
 {
 	"story": {
 		"chapter_0_0": {
+			"introduction": {
+				["The alarm clock rings indicating the start of the day. It's 6:00 AM. You are forced to open your eyes for one reason or another."]
+			},
 			"text": [
-				["The alarm clock rings indicating the start of the day. It's 6:00 AM. You are forced to open your eyes for one reason or another."],
 				["You decide to get out of bed.", "You decide to go back to sleep."],
 				["You decided to go sit at your desk and turn on your PC. When you see the login screen you decide to enter your password, a numeric sequence of eight characters.", "You decided to go to school, without having breakfast or saying goodbye to anyone.", "You decided to go to breakfast."],
-				["You decide to open Tor browser outside of a VM.", "You decide to open Tor Browser inside of a VM."]
+				["You decide to open Tor browser outside of a VM.", "You decide to open Tor Browser inside of a VM."],
+				[]
 			],
 			"options": [
 				["Get out of bed", "Go back to sleep"],
