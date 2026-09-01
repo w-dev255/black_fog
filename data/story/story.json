@@ -1,6 +1,6 @@
 {
 	"story": {
-		"chapter_0_0": {
+		"root_chapter": {
 			"text": "The alarm clock rings indicating the start of the day. It's 6:00 AM. You are forced to open your eyes for one reason or another.",
 			"options": ["Get out of bed", "Go back to sleep"],
 			"goto": ["good_start", "bad_start"]
