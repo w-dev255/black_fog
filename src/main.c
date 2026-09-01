@@ -22,7 +22,7 @@ int main(int argc, char* argv[]) {
 			printf("	0. Start\n	1. Load\n	2.Quit\n\n");
 
 			printf("user: ");
-			oneline_input(&oneline);
+			oneline_input(oneline);
 
 			if (strlen(oneline.buffer) == 0) {
 				continue;
