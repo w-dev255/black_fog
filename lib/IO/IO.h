@@ -55,13 +55,12 @@
 			if (oneline->buffer != NULL) {
 				free(oneline->buffer);
 				oneline->buffer = NULL;
+				oneline->allocated = 0;
 			}
 
 			if (oneline->buffer_size != 0) {
 				oneline->buffer_size = 0;
 			}
-
-			oneline->allocated = 0;
 		}
 
 		return;
@@ -76,13 +75,12 @@
 			if (oneline->buffer != NULL) {
 				free(oneline->buffer);
 				oneline->buffer = NULL;
+				oneline->allocated = 0;
 			}
 
 			if (oneline->buffer_size != 0) {
 				oneline->buffer_size = 0;
 			}
-
-			oneline->allocated = 0;
 		}
 
 		free(oneline);
