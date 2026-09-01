@@ -8,7 +8,7 @@
 				["You decided to get out of bed.", "You decided to go back to sleep."],
 				["You decided to go sit at your desk and turn on your PC. When you see the login screen you decided to enter your password, a numeric sequence of eight characters.", "You decided to go to school, without having breakfast or saying goodbye to anyone.", "You decided to go to breakfast."],
 				["You decided to open Tor browser outside of a VM.", "You decided to open Tor Browser inside of a VM."],
-				[]
+				[null, null, null, null]
 			],
 			"options": [
 				["Get out of bed", "Go back to sleep"],
