@@ -16,10 +16,12 @@ int main(int argc, char* argv[]) {
 
 		while (1) {
 			fflush(stdout);
+			printf("\033[2J\033[H");
+			fflush(stdout);
 
 			printf("\n\n|-------------------------------------------|\n|                   MENU                    |\n|-------------------------------------------|\n\n");
 
-			printf("	0. Start\n	1. Load\n	2.Quit\n\n");
+			printf("	0. Start\n	1. Load\n	2. Quit\n\n");
 
 			printf("user: ");
 			oneline_input(oneline);
@@ -27,8 +29,7 @@ int main(int argc, char* argv[]) {
 			if (strlen(oneline->buffer) == 0) {
 				continue;
 			} else if (strcmp(oneline->buffer, "0") == 0 || strcmp(oneline->buffer, "Start") == 0) {
-					printf("Placeholder\n");
-				}
+				printf("Placeholder\n");
 			} else if (strcmp(oneline->buffer, "1") == 0 || strcmp(oneline->buffer, "Load") == 0) {
 				printf("Placeholder\n");
 			} else if (strcmp(oneline->buffer, "2") == 0 || strcmp(oneline->buffer, "Quit") == 0) {
