@@ -24,14 +24,14 @@ int main(int argc, char* argv[]) {
 			printf("user: ");
 			oneline_input(oneline);
 
-			if (strlen(oneline.buffer) == 0) {
+			if (strlen(oneline->buffer) == 0) {
 				continue;
-			} else if (strcmp(oneline.buffer, "0") == 0 || strcmp(oneline.buffer, "Start") == 0) {
+			} else if (strcmp(oneline->buffer, "0") == 0 || strcmp(oneline->buffer, "Start") == 0) {
 					printf("Placeholder\n");
 				}
-			} else if (strcmp(oneline.buffer, "1") == 0 || strcmp(oneline.buffer, "Load") == 0) {
+			} else if (strcmp(oneline->buffer, "1") == 0 || strcmp(oneline->buffer, "Load") == 0) {
 				printf("Placeholder\n");
-			} else if (strcmp(oneline.buffer, "2") == 0 || strcmp(oneline.buffer, "Quit") == 0) {
+			} else if (strcmp(oneline->buffer, "2") == 0 || strcmp(oneline->buffer, "Quit") == 0) {
 				destroy_buffer(oneline);
 
 				destroy_oneline(oneline);
