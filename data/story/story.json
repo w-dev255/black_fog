@@ -1,0 +1,11 @@
+{
+	"story": {
+		"chapter_0_0": {
+			"text": [],
+			"options": [
+				["Get out of bed", "Go back to sleep"]
+				["Turn on the PC", "Go to school", "Have break fast"]
+			]
+		}
+	}
+}
