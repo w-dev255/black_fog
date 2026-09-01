@@ -1,3 +1,11 @@
 bin/
 backup/
 src/lib/
+lib/cJSON/.git
+lib/cJSON/.gitattributes
+lib/cJSON/.github
+lib/cJSON/.gitignore
+src/lib/cJSON/.git
+src/lib/cJSON/.gitattributes
+src/lib/cJSON/.github
+src/lib/cJSON/.gitignore
