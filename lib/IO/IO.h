@@ -24,11 +24,15 @@
 			oneline->buffer_size = DEFAULT_BUFFER;
 		}
 
-		if (oneline->buffer == NULL) {
-			oneline->buffer = calloc(oneline->buffer_size, 1);
-
+		if (oneline->allocated == 0) {
 			if (oneline->buffer == NULL) {
-				return;
+				oneline->buffer = calloc(oneline->buffer_size, 1);
+
+				if (oneline->buffer == NULL) {
+					return;
+				}
+
+				oneline->allocated = 1;
 			}
 		}
 
@@ -56,6 +60,8 @@
 			if (oneline->buffer_size != 0) {
 				oneline->buffer_size = 0;
 			}
+
+			oneline->allocated = 0;
 		}
 
 		return;
@@ -75,6 +81,8 @@
 			if (oneline->buffer_size != 0) {
 				oneline->buffer_size = 0;
 			}
+
+			oneline->allocated = 0;
 		}
 
 		free(oneline);
