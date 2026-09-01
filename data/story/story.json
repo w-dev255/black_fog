@@ -10,7 +10,8 @@
 			"options": [
 				["Get out of bed", "Go back to sleep"],
 				["Turn on the PC", "Go to school", "Have break fast"],
-				["Open Tor Browser.", "Open Tor browser in a VM."]
+				["Open Tor Browser.", "Open Tor browser in a VM."],
+				["Search C programming language tutorial", "Use VirtualBox", "Use VMware Workstation Player", "Use KVM"]
 			]
 		}
 	}
