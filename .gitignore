@@ -14,7 +14,12 @@ lib/third-party/cJSON/LICENSE
 lib/third-party/cJSON/SECURITY.md
 lib/third-party/cJSON/appveyor.yml
 lib/third-party/cJSON/valgrind.supp
-#src/lib/cJSON/.git
-#src/lib/cJSON/.gitattributes
-#src/lib/cJSON/.github
-#src/lib/cJSON/.gitignore
+lib/third-party/cJSON/cJSON.c
+lib/third-party/cJSON/cJSON.h
+lib/third-party/cJSON/cJSON_Utils.c
+lib/third-party/cJSON/cJSON_Utils.h
+lib/third-party/cJSON/fuzzing
+lib/third-party/cJSON/library_config
+lib/third-party/cJSON/test.c
+lib/third-party/cJSON/tests
+
