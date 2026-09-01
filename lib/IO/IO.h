@@ -44,11 +44,32 @@
 			return;
 		}
 
-		if (oneline->buffer == NULL) {
+		if (oneline->buffer != NULL) {
+			free(oneline->buffer);
+			oneline->buffer = NULL;
+		}
+
+		if (oneline->buffer_size != 0) {
+			oneline->buffer_size = 0;
+		}
+
+		return;
+	}
+
+	void destroy_oneline(ONELINE* oneline) {
+		if (oneline == NULL) {
 			return;
 		}
 
-		free(oneline->buffer);
+		if (oneline->buffer != NULL) {
+			free(oneline->buffer);
+			oneline->buffer = NULL;
+		}
+
+		if (oneline->buffer_size != 0) {
+			oneline->buffer_size = 0;
+		}
+
 		free(oneline);
 
 		return;
